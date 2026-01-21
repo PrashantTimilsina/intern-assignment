@@ -1,9 +1,22 @@
 import { Button } from "@/components/ui/button";
-
+import Aicene from "./../assets/aicene.png";
+import DressNepal from "./../assets/dressnepal.png";
+import GifyPoint from "./../assets/giftypoint.png";
+import NaturalWears from "./../assets/naturalwears.jpg";
+import OrganicWear from "./../assets/organicwear.png";
+import YHH from "./../assets/YHH.png";
 import { ArrowRight, Video } from "lucide-react";
 import Image from "next/image";
 import HeroPic from "./../assets/hero.png";
 function Hero() {
+  const images = [
+    DressNepal,
+    YHH,
+    OrganicWear,
+    GifyPoint,
+    NaturalWears,
+    Aicene,
+  ];
   return (
     <div className="container mx-auto flex flex-col items-center lg:mt-28 mt-14  ">
       <div className="flex flex-col  px-2">
@@ -36,10 +49,11 @@ function Hero() {
           Watch Demo
         </Button>
       </div>
-      <h1 className="mt-3 text-sm">
+      <h3 className="mt-3 text-sm">
         <span className="font-semibold">Secure setup</span> · Free 14-day trial,
-        no card.{" "}
-      </h1>
+        no card.
+      </h3>
+
       <div className="flex justify-center mt-6 max-lg:hidden">
         <Image
           src={HeroPic}
@@ -48,6 +62,24 @@ function Hero() {
           alt="Hero section image"
           className="w-269.25 h-184.25"
         />
+      </div>
+      <div className="container mx-auto lg:mt-0 mt-8">
+        <h1 className="font-semibold text-hero-primary text-center ">
+          Trusted by Businesses Worldwide
+        </h1>
+        <div className="flex lg:w-300 max-lg:overflow-x-scroll  lg:justify-evenly  space-x-4  container mx-auto lg:mt-6 px-4 mt-4">
+          {images.map((el, i) => (
+            <div key={i}>
+              <Image
+                src={el}
+                alt="company logo"
+                width={241}
+                height={41}
+                className="lg:w-36 lg:h-7  w-32 h-6  object-contain"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

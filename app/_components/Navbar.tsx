@@ -7,7 +7,7 @@ function Navbar() {
   const [show, setShow] = useState(false);
 
   return (
-    <header className="lg:container lg:mx-auto lg:mt-1 bg-white">
+    <div className="lg:container lg:mx-auto lg:mt-1 bg-white">
       <nav className="flex items-center justify-between lg:px-28 py-6 ">
         <div className="flex items-center gap-2 px-4">
           <Codepen />
@@ -94,7 +94,7 @@ function Navbar() {
           </div>
         </ul>
       </nav>
-    </header>
+    </div>
   );
 }
 

@@ -1,18 +1,19 @@
 import Navbar from "@/app/_components/Navbar";
-import { Button } from "@/components/ui/button";
+
 import Hero from "./_components/Hero";
+import Seller from "./_components/Seller";
 
 function App() {
   return (
-    // <Button variant="outline" className="bg-primary text-btn-text-primary">
-    //   Hello
-    // </Button>
     <main>
-      <section className="sticky top-0 z-50  h-14">
+      <header className="sticky top-0 z-50  h-14">
         <Navbar />
-      </section>
+      </header>
       <section>
         <Hero />
+      </section>
+      <section className="bg-seller mt-16 py-12 ">
+        <Seller />
       </section>
     </main>
   );
