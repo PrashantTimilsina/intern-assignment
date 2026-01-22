@@ -9,6 +9,9 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
+        keyFeature:
+          "bg-transparent border-0 rounded-none shadow-none focus-visible:ring-0",
+        readmore: "bg-transparent text-left",
         default: "bg-primary text-primary-foreground hover:bg-primary/90",
 
         destructive:

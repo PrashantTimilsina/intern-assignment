@@ -7,8 +7,8 @@ function Navbar() {
   const [show, setShow] = useState(false);
 
   return (
-    <div className="lg:container lg:mx-auto lg:mt-1 bg-white">
-      <nav className="flex items-center justify-between lg:px-28 py-6 ">
+    <div className="lg:container lg:mx-auto lg:mt-1 bg-white ">
+      <nav className="flex items-center justify-between lg:px-28 py-4 ">
         <div className="flex items-center gap-2 px-4">
           <Codepen />
           <h1 className="font-semibold text-logo-text">Logo goes here</h1>
