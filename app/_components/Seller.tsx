@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 function Seller() {
   const [readIndex, setReadIndex] = useState<number | null>(null);
   return (
-    <div className="container mx-auto lg:px-10 px-4">
+    <div className="container mx-auto lg:px-0 px-2 ">
       <div className="flex gap-1  lg:gap-4 space-x-16 lg:flex-row flex-col ">
         <h1 className="font-semibold text-2xl lg:text-5xl  max-lg:text-center whitespace-nowrap max-lg:px-6">
           Built for Every Type

@@ -7,7 +7,7 @@ import KeyFeatures from "./_components/KeyFeatures";
 function App() {
   return (
     <main>
-      <header className="sticky top-0 z-50  h-12 w-full bg-white">
+      <header className="sticky top-0 z-50 w-full bg-white">
         <Navbar />
       </header>
       <section>
@@ -19,6 +19,7 @@ function App() {
       <section>
         <KeyFeatures />
       </section>
+      <section className="min-h-screen"></section>
     </main>
   );
 }

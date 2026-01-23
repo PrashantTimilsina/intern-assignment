@@ -1,8 +1,9 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-
+import Product from "./../assets/product.png";
 import { useState } from "react";
+import Image from "next/image";
 
 const features = [
   "Product & Inventory Management",
@@ -13,6 +14,7 @@ const features = [
 
 function KeyFeatures() {
   const [active, setActive] = useState(features[0]);
+  const [title, setTitle] = useState("Product & Inventory Management");
 
   const handleClick = (item: string) => {
     setActive((prev) => (prev === item ? prev : item));
@@ -20,17 +22,17 @@ function KeyFeatures() {
 
   return (
     <div className="container mx-auto">
-      <div className="flex flex-col items-center gap-3 text-center">
+      <div className="flex flex-col items-center gap-2 lg:gap-3 text-center ">
         <span className="mt-8 lg:mt-12 w-fit bg-seller px-6 py-2 rounded-full text-hero-secondary">
           Key Features
         </span>
 
-        <h1 className="text-5xl font-semibold">
+        <h1 className="text-xl lg:text-5xl font-semibold">
           Everything You Need to Run
           <span className="block">Your Store Smoothly</span>
         </h1>
 
-        <p className="mt-1 text-logo-text max-w-2xl">
+        <p className="lg:mt-1 text-logo-text lg:text-base text-sm">
           Powerful tools that help you manage products, orders, shipping,
           payments, and{" "}
           <span className="lg:block ">
@@ -39,22 +41,48 @@ function KeyFeatures() {
         </p>
       </div>
 
-      <div className="flex justify-center gap-8 mt-10">
+      <div className="no-scrollbar flex lg:justify-center lg:gap-8 lg:mt-10 mt-6 max-lg:overflow-x-scroll max-lg:px-2">
         {features.map((item) => (
           <Button
             key={item}
-            onClick={() => handleClick(item)}
+            onClick={() => {
+              handleClick(item);
+              setTitle(item);
+            }}
             variant="keyFeature"
             className={`pb-2 text-sm font-medium transition-all duration-200 cursor-pointer
               ${
                 active === item
                   ? "border-b-2 border-key-btn text-key-btn "
-                  : "text-gray-500 hover:text-key-btn"
+                  : "text-logo-text hover:text-key-btn"
               }`}
           >
             {item}
           </Button>
         ))}
+      </div>
+      <div className="flex mt-7 h-158.25  ">
+        <div className="w-133  bg-[#fef5ec] flex flex-col gap-1 lg:gap-4 lg:justify-center lg:p-8 items-start text-hero-primary p-5">
+          <h3 className="text-xl lg:text-3xl  font-semibold ">{title}</h3>
+          <p className="font-semibold ">
+            Everything you need to organize your catalog with ease.
+          </p>
+          <p>
+            Manage your products, variants, and inventory from one place. Keep
+            stock levels accurate across your online store, physical POS, and
+            marketplace channels.
+          </p>
+          <Button className="cursor-pointer ">Manage Products</Button>
+        </div>
+        <div className="flex-1 relative overflow-hidden bg-[#fadfc3] ">
+          <Image
+            src={Product}
+            alt="Product Image"
+            height={570}
+            width={700}
+            className="top-16 left-27.5 right-0 object-contain w-175 h-142.5 rounded-tl-2xl absolute "
+          />
+        </div>
       </div>
     </div>
   );
