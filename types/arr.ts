@@ -1,4 +1,4 @@
-export type Seller = {
+export type SellerType = {
   title: string;
   subtitle: string;
   icon: React.FC<React.SVGProps<SVGSVGElement>>;

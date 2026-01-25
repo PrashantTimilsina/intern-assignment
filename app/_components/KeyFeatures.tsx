@@ -61,26 +61,39 @@ function KeyFeatures() {
           </Button>
         ))}
       </div>
-      <div className="flex mt-7 h-158.25  ">
+      <div className="flex mt-7   ">
         <div className="w-133  bg-[#fef5ec] flex flex-col gap-1 lg:gap-4 lg:justify-center lg:p-8 items-start text-hero-primary p-5">
           <h3 className="text-xl lg:text-3xl  font-semibold ">{title}</h3>
           <p className="font-semibold ">
             Everything you need to organize your catalog with ease.
           </p>
-          <p>
+          <div className="relative  bg-[#fadfc3] block lg:hidden rounded-md h-65.75 w-full overflow-hidden mt-5 ">
+            <Image
+              src={Product}
+              alt="Product Image"
+              width={356}
+              height={273}
+              className="relative top-4.5 left-5   h-64 w-96 rounded-tl-md "
+            />
+          </div>
+
+          <p className="mt-4">
             Manage your products, variants, and inventory from one place. Keep
             stock levels accurate across your online store, physical POS, and
             marketplace channels.
           </p>
-          <Button className="cursor-pointer ">Manage Products</Button>
+          <Button className="cursor-pointer mt-4 lg:w-auto w-full max-lg:py-5">
+            Manage Products
+          </Button>
         </div>
-        <div className="flex-1 relative overflow-hidden bg-[#fadfc3] ">
+
+        <div className="w-202.5 flex-1  bg-[#FADFC3] pt-16 pl-[128] overflow-hidden hidden lg:block">
           <Image
             src={Product}
             alt="Product Image"
-            height={570}
-            width={700}
-            className="top-16 left-27.5 right-0 object-contain w-175 h-142.5 rounded-tl-2xl absolute "
+            width={810}
+            height={633}
+            className="rounded-tl-2xl"
           />
         </div>
       </div>

@@ -3,6 +3,7 @@ import Navbar from "@/app/_components/Navbar";
 import Hero from "./_components/Hero";
 import Seller from "./_components/Seller";
 import KeyFeatures from "./_components/KeyFeatures";
+import RealTime from "./_components/RealTime";
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
       <section>
         <KeyFeatures />
       </section>
-      <section className="min-h-screen"></section>
+      <section className="bg-realtime mt-8">
+        <RealTime />
+      </section>
     </main>
   );
 }

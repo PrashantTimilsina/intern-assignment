@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${googleSansFlex.className}  ${googleSans.variable} antialiased overflow-x-hidden  `}
+        className={` ${googleSansFlex.className}  ${googleSans.variable}   antialiased overflow-x-hidden  `}
       >
         {children}
       </body>
