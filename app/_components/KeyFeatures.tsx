@@ -62,12 +62,12 @@ function KeyFeatures() {
         ))}
       </div>
       <div className="flex mt-7   ">
-        <div className="w-133  bg-[#fef5ec] flex flex-col gap-1 lg:gap-4 lg:justify-center lg:p-8 items-start text-hero-primary p-5">
+        <div className="w-133  bg-key-first flex flex-col gap-1 lg:gap-4 lg:justify-center lg:p-8 items-start text-hero-primary p-5">
           <h3 className="text-xl lg:text-3xl  font-semibold ">{title}</h3>
           <p className="font-semibold ">
             Everything you need to organize your catalog with ease.
           </p>
-          <div className="relative  bg-[#fadfc3] block lg:hidden rounded-md h-65.75 w-full overflow-hidden mt-5 ">
+          <div className="relative  bg-key-second block lg:hidden rounded-md h-65.75 w-full overflow-hidden mt-5 ">
             <Image
               src={Product}
               alt="Product Image"
@@ -87,7 +87,7 @@ function KeyFeatures() {
           </Button>
         </div>
 
-        <div className="w-202.5 flex-1  bg-[#FADFC3] pt-16 pl-[128] overflow-hidden hidden lg:block">
+        <div className="w-202.5 flex-1  bg-key-image pt-16 pl-[128] overflow-hidden hidden lg:block">
           <Image
             src={Product}
             alt="Product Image"
