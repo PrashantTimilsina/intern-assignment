@@ -6,6 +6,7 @@ import KeyFeatures from "./_components/KeyFeatures";
 import RealTime from "./_components/RealTime";
 import Tools from "./_components/Tools";
 import Testimonials from "./_components/Testimonials";
+import Blogs from "./_components/Blogs";
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
       </section>
       <section>
         <Testimonials />
+      </section>
+      <section className="bg-seller">
+        <Blogs />
       </section>
     </main>
   );

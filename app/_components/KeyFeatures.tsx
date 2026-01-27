@@ -67,13 +67,13 @@ function KeyFeatures() {
           <p className="font-semibold ">
             Everything you need to organize your catalog with ease.
           </p>
-          <div className="relative  bg-key-second block lg:hidden rounded-md h-65.75 w-full overflow-hidden mt-5 ">
+          <div className="relative  bg-key-second block lg:hidden rounded-md h-64 lg:h-65.75 w-full overflow-hidden mt-5 ">
             <Image
               src={Product}
               alt="Product Image"
               width={356}
               height={273}
-              className="relative top-4.5 left-5   h-64 w-96 rounded-tl-md "
+              className="relative lg:top-4.5 lg:left-5   lg:h-64 lg:w-96 rounded-tl-md left-15 h-52 w-96 top-12"
             />
           </div>
 
