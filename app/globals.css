@@ -48,6 +48,7 @@
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 @theme {
   --color-primary: #3a3f87;
   --color-btn-text-primary: #ffffff;
@@ -63,11 +64,15 @@
   --color-key-first: #fef5ec;
   --color-key-second: #fadfc3;
   --color-key-image: #fadfc3;
-  --color-feature-first: : #fef5ec;
-  --color-feature-second: : #fadfc3;
+  --color-feature-first: #fef5ec;
+  --color-feature-second: #fadfc3;
   --color-realtime: #14162f;
   --color-carousel-card: #c2c3da;
   --color-testimonial: #3a3f87;
+  --color-blog-subtitle: #464646;
+  --color-published-date: #959595;
+  --color-contact: #5dc7a4;
+  --color-footer: #14162f;
 }
 
 :root {

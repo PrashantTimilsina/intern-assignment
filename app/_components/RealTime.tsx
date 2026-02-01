@@ -1,6 +1,6 @@
-// "use client";
+"use client";
 
-import * as React from "react";
+import { useState } from "react";
 import Image from "next/image";
 
 import Revenue from "./../assets/revenue.png";
@@ -11,8 +11,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 
 const dashboardCards = [
@@ -40,8 +38,12 @@ const dashboardCards = [
 ];
 
 export default function RealTime() {
+  const [embla, setEmbla] = useState<any>(null);
+  const [selected, setSelected] = useState(0);
+
   return (
     <div className="container mx-auto py-12">
+      {/* HEADER */}
       <div className="flex justify-between text-center lg:flex-row flex-col lg:text-base text-sm gap-4 mb-10">
         <h1 className="text-white font-semibold lg:text-[56px] text-2xl">
           Get a Clear, Real-Time
@@ -60,6 +62,8 @@ export default function RealTime() {
           performance in one place.
         </h3>
       </div>
+
+      {/* DESKTOP GRID */}
       <div className="hidden lg:grid lg:grid-cols-3 gap-6">
         {dashboardCards.map((card, index) => (
           <div key={index} className="rounded-2xl p-6 space-y-4">
@@ -79,8 +83,21 @@ export default function RealTime() {
         ))}
       </div>
 
+      {/* MOBILE CAROUSEL */}
       <div className="lg:hidden">
-        <Carousel className="w-full">
+        <Carousel
+          className="w-full"
+          setApi={(api) => {
+            if (!api) return;
+
+            setEmbla(api);
+            setSelected(api.selectedScrollSnap());
+
+            api.on("select", () => {
+              setSelected(api.selectedScrollSnap());
+            });
+          }}
+        >
           <CarouselContent>
             {dashboardCards.map((card, index) => (
               <CarouselItem key={index} className="basis-full">
@@ -105,10 +122,22 @@ export default function RealTime() {
               </CarouselItem>
             ))}
           </CarouselContent>
-
-          <CarouselPrevious />
-          <CarouselNext />
         </Carousel>
+
+        {/* DOT BUTTONS */}
+        <div className="flex justify-center gap-2 mt-6">
+          {dashboardCards.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => embla?.scrollTo(index)}
+              className={`h-2.5 w-2.5 rounded-full transition-all ${
+                selected === index
+                  ? "bg-[#5DC7A4] scale-110 w-8 h-2"
+                  : "bg-white"
+              }`}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

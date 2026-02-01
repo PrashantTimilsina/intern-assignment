@@ -67,17 +67,16 @@ function Hero() {
         <h1 className="font-semibold text-hero-primary text-center ">
           Trusted by Businesses Worldwide
         </h1>
-        <div className="flex lg:w-300 max-lg:overflow-x-scroll  lg:justify-evenly  space-x-4  container mx-auto lg:mt-6 px-4 mt-4 ">
+        <div className="flex overflow-x-auto gap-4 mt-4 px-4 lg:justify-evenly">
           {images.map((el, i) => (
-            <div key={i}>
-              <Image
-                src={el}
-                alt="company logo"
-                width={241}
-                height={41}
-                className="lg:w-36 lg:h-7  w-32 h-6  object-contain "
-              />
-            </div>
+            <Image
+              key={i}
+              src={el}
+              alt="company logo"
+              width={241}
+              height={41}
+              className="w-32 h-6 lg:w-36 lg:h-7 object-contain shrink-0"
+            />
           ))}
         </div>
       </div>

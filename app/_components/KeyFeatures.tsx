@@ -53,7 +53,7 @@ function KeyFeatures() {
             className={`pb-2 text-sm font-medium transition-all duration-200 cursor-pointer
               ${
                 active === item
-                  ? "border-b-2 border-key-btn text-key-btn "
+                  ? "max-lg:bg-[#F6F6F6] lg:border-b-2 border-key-btn text-key-btn "
                   : "text-logo-text hover:text-key-btn"
               }`}
           >
@@ -61,6 +61,7 @@ function KeyFeatures() {
           </Button>
         ))}
       </div>
+
       <div className="flex mt-7   ">
         <div className="w-133  bg-key-first flex flex-col gap-1 lg:gap-4 lg:justify-center lg:p-8 items-start text-hero-primary p-5">
           <h3 className="text-xl lg:text-3xl  font-semibold ">{title}</h3>

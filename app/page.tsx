@@ -7,6 +7,9 @@ import RealTime from "./_components/RealTime";
 import Tools from "./_components/Tools";
 import Testimonials from "./_components/Testimonials";
 import Blogs from "./_components/Blogs";
+import FAQ from "./_components/FAQ";
+import NewsLetter from "./_components/NewsLetter";
+import Footer from "./_components/Footer";
 
 function App() {
   return (
@@ -35,6 +38,15 @@ function App() {
       <section className="bg-seller">
         <Blogs />
       </section>
+      <section>
+        <FAQ />
+      </section>
+      <section className="bg-seller py-6">
+        <NewsLetter />
+      </section>
+      <footer className=" bg-footer">
+        <Footer />
+      </footer>
     </main>
   );
 }

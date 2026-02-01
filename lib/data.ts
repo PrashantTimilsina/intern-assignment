@@ -74,7 +74,7 @@ export const testimonialData = [
 ];
 export const blogs = [
   {
-    title: "Managing our online and retail store is now effortless.",
+    title: "Managing our online and retail store is now \neffortless.",
     subtitle:
       "Learn simple techniques to keep your stock accurate, avoid overselling, and maintain real-time inventory updates across all your sales channels.",
     image: RetailStore,
@@ -84,7 +84,7 @@ export const blogs = [
     readDuration: "6 min read",
   },
   {
-    title: "7 Ways to Improve Your Order Processing Speed",
+    title: "7 Ways to Improve Your Order Processing \nSpeed",
     subtitle:
       "Discover easy workflow improvements that help you fulfill orders faster, reduce delays, and deliver a better customer experience.",
     image: Speed,
@@ -102,5 +102,32 @@ export const blogs = [
     ownerName: "Bimal Khatri",
     date: "March 16,2022",
     readDuration: "7 min read",
+  },
+];
+export const FAQData = [
+  {
+    title: "Do I need technical skills to use this platform?",
+    subtitle:
+      "No. Our system is built for everyone, even beginners. You can manage products, orders, and shipping with an easy, user-friendly dashboard.",
+  },
+  {
+    title: "Can I cancel my subscription anytime?",
+    subtitle:
+      "Yes. You can cancel your subscription whenever you want without penalties, hidden charges, or complicated steps through your account settings.",
+  },
+  {
+    title: "Which POS systems can I connect?",
+    subtitle:
+      "We support popular POS systems that integrate seamlessly, allowing real-time sync of sales, inventory, and customer data across platforms.",
+  },
+  {
+    title: "What shipping partners do you support?",
+    subtitle:
+      "We work with trusted shipping partners to ensure fast deliveries, real-time tracking, flexible options, and reliable service for customers.",
+  },
+  {
+    title: "How secure is my data?",
+    subtitle:
+      "Your data is protected using advanced security measures, encryption protocols, regular monitoring, and industry-standard practices to ensure safety.",
   },
 ];
