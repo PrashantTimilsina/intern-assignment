@@ -7,7 +7,7 @@ function FAQ() {
   const [clickedIndex, setClickedIndex] = useState<number | null>(0);
 
   return (
-    <div className="container mx-auto flex flex-col items-center py-12 gap-6">
+    <div className="container  flex flex-col items-center py-12 gap-6">
       <h1 className="lg:text-[56px] font-semibold text-xl">
         Frequently asked questions
       </h1>

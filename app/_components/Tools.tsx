@@ -37,7 +37,7 @@ const data = [
 ];
 function Tools() {
   return (
-    <div className="container mx-auto text-center">
+    <div className="container  text-center">
       <div className="space-y-3 px-2">
         <h3 className="text-center">
           <span className="bg-white px-6 py-2 rounded-full text-hero-secondary">

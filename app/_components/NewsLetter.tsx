@@ -21,7 +21,7 @@ function NewsLetter() {
     }, 2000);
   }
   return (
-    <div className="container mx-auto flex justify-between items-center lg:flex-row flex-col max-lg:px-4">
+    <div className="container  flex justify-between items-center lg:flex-row flex-col max-lg:px-4">
       <div className="space-y-3">
         <h3 className="lg:text-4xl font-semibold text-base">
           Join our newsletter

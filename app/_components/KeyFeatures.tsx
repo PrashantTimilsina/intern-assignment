@@ -21,7 +21,7 @@ function KeyFeatures() {
   };
 
   return (
-    <div className="container mx-auto">
+    <div className="container ">
       <div className="flex flex-col items-center gap-2 lg:gap-3 text-center ">
         <span className="mt-8 lg:mt-12 w-fit bg-seller px-6 py-2 rounded-full text-hero-secondary">
           Key Features

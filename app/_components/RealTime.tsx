@@ -43,7 +43,7 @@ export default function RealTime() {
   const [selected, setSelected] = useState(0);
 
   return (
-    <div className="container mx-auto py-12">
+    <div className="container  py-12">
       {/* HEADER */}
       <div className="flex justify-between text-center lg:flex-row flex-col lg:text-base text-sm gap-4 mb-10">
         <h1 className="text-white font-semibold lg:text-[56px] text-2xl">

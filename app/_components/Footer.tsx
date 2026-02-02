@@ -4,7 +4,7 @@ function Footer() {
   const date = new Date().getFullYear();
 
   return (
-    <div className="container mx-auto text-white lg:pt-12 pb-5 flex flex-col gap-6 max-lg:px-4 pt-8">
+    <div className="container  text-white lg:pt-12 pb-5 flex flex-col gap-6 max-lg:px-4 pt-8">
       <div className="text-base flex  lg:gap-16 lg:flex-row flex-col gap-8 ">
         {/*first div*/}
         <div className="space-y-4">

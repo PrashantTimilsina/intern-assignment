@@ -28,7 +28,7 @@ function Testimonials() {
     : testimonialData.slice(2, 4);
 
   return (
-    <div className="container mx-auto py-6 lg:py-16 flex justify-between lg:gap-10 lg:flex-row flex-col max-lg:px-2.5 gap-5">
+    <div className="container  py-6 lg:py-16 flex justify-between lg:gap-10 lg:flex-row flex-col max-lg:px-2.5 gap-5">
       <div className="flex flex-col lg:gap-4 max-lg:text-center gap-2">
         <h4>
           <span className="bg-seller text-hero-secondary rounded-full px-4 py-2">

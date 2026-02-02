@@ -48,8 +48,12 @@
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
-
+@utility container {
+  /* Centers the container horizontally by default */
+  @apply mx-auto;
+}
 @theme {
+  --container-center: true;
   --color-primary: #3a3f87;
   --color-btn-text-primary: #ffffff;
   --color-hover-primary: #6f75b8;

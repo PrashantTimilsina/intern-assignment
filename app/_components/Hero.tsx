@@ -18,7 +18,7 @@ function Hero() {
     Aicene,
   ];
   return (
-    <div className="container mx-auto flex flex-col items-center lg:mt-28 mt-16  ">
+    <div className="container  flex flex-col items-center lg:mt-28 mt-16  ">
       <div className="flex flex-col  px-2">
         <h1 className="lg:text-6xl font-sans-base font-semibold text-hero-primary px-5 text-2xl text-center">
           Run your whole eCommerce

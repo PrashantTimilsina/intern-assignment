@@ -7,7 +7,7 @@ function Navbar() {
   const [show, setShow] = useState(false);
 
   return (
-    <div className="lg:container lg:mx-auto lg:mt-1 bg-white ">
+    <div className="lg:container  lg:mt-1 bg-white ">
       <nav className="flex items-center justify-between  py-4 z-50">
         <div className="flex items-center gap-2 px-4">
           <Codepen />

@@ -2,7 +2,7 @@ import { blogs } from "@/lib/data";
 import Image from "next/image";
 function Blogs() {
   return (
-    <div className="container mx-auto lg:py-12 py-6">
+    <div className="container  lg:py-12 py-6">
       <div className="flex  flex-col items-center gap-1">
         <h4>
           <span className="bg-white text-hero-secondary rounded-full px-5 py-2 ">
