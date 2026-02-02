@@ -17,7 +17,7 @@ function Blogs() {
           <span className="lg:block inline">retail business.</span>
         </p>
       </div>
-      <div className="flex gap-4 mt-5 max-lg:overflow-x-scroll max-lg:px-2">
+      <div className="flex gap-4 mt-5 max-lg:overflow-x-scroll max-lg:px-2 no-scrollbar">
         {blogs.map((el, i) => (
           <div
             key={i}

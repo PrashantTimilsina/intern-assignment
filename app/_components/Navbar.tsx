@@ -54,7 +54,7 @@ function Navbar() {
           </Button>
         </div>
         <ul
-          className={`fixed top-16  w-full
+          className={`fixed top-14  w-full
           flex flex-col gap-4
           transition-transform duration-150 transform ease-in-out
           cursor-pointer text-nav-text bg-gray-300

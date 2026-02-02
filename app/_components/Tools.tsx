@@ -57,7 +57,7 @@ function Tools() {
           </span>
         </p>
       </div>
-      <div className="flex gap-2 overflow-x-auto mt-8 max-lg:px-4 max-lg:justify-center">
+      <div className="flex gap-2 max-lg:overflow-x-auto mt-8 max-lg:px-4 max-lg:justify-center no-scrollbar">
         {data.map((el, i) => (
           <div
             key={i}

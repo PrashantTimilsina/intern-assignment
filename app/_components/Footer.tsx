@@ -19,19 +19,19 @@ function Footer() {
           <div className="flex gap-4">
             <Facebook
               size={20}
-              className="bg-white h-8 w-8 rounded-full text-[#3A3F87] p-1.5"
+              className="bg-white h-8 w-8 rounded-full text-icon-primary p-1.5"
             />
             <Instagram
               size={20}
-              className="bg-white h-8 w-8 rounded-full text-[#3A3F87] p-1.5"
+              className="bg-white h-8 w-8 rounded-full text-icon-primary p-1.5"
             />
             <Twitter
               size={20}
-              className="bg-white h-8 w-8 rounded-full text-[#3A3F87] p-1.5"
+              className="bg-white h-8 w-8 rounded-full text-icon-primary p-1.5"
             />
             <Linkedin
               size={20}
-              className="bg-white h-8 w-8 rounded-full text-[#3A3F87] p-1.5"
+              className="bg-white h-8 w-8 rounded-full text-icon-primary p-1.5"
             />
           </div>
         </div>
@@ -76,7 +76,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <hr className="border-[#2A318D] border font-light" />
+      <hr className="border-horizontal-line border font-light" />
       <div className="flex justify-between lg:flex-row flex-col max-lg:text-sm max-lg:items-center lg:gap-6 gap-4">
         <h4>&copy; {date} Yhhit Solutions. All rights reserved.</h4>
 

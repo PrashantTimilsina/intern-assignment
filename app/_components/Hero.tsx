@@ -67,7 +67,7 @@ function Hero() {
         <h1 className="font-semibold text-hero-primary text-center ">
           Trusted by Businesses Worldwide
         </h1>
-        <div className="flex overflow-x-auto gap-4 mt-4 px-4 lg:justify-evenly">
+        <div className="flex max-lg:overflow-x-auto gap-4 mt-4 px-4 lg:justify-evenly no-scrollbar">
           {images.map((el, i) => (
             <Image
               key={i}

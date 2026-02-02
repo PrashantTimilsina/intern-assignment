@@ -12,6 +12,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import type { EmblaCarouselType } from "embla-carousel";
 
 const dashboardCards = [
   {
@@ -38,7 +39,7 @@ const dashboardCards = [
 ];
 
 export default function RealTime() {
-  const [embla, setEmbla] = useState<any>(null);
+  const [embla, setEmbla] = useState<EmblaCarouselType | null>(null);
   const [selected, setSelected] = useState(0);
 
   return (
