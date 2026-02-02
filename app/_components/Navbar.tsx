@@ -8,7 +8,7 @@ function Navbar() {
 
   return (
     <div className="lg:container lg:mx-auto lg:mt-1 bg-white ">
-      <nav className="flex items-center justify-between  py-4 ">
+      <nav className="flex items-center justify-between  py-4 z-50">
         <div className="flex items-center gap-2 px-4">
           <Codepen />
           <h1 className="font-semibold text-logo-text">Logo goes here</h1>
@@ -29,7 +29,7 @@ function Navbar() {
           </li>
           <li>Contact</li>
         </ul>
-        <div className="lg:hidden px-4">
+        <div className="lg:hidden px-4 z-50">
           {show ? (
             <X onClick={() => setShow(false)} />
           ) : (
@@ -55,11 +55,11 @@ function Navbar() {
         </div>
         <ul
           className={`fixed top-14  w-full
-          flex flex-col gap-4
-          transition-transform duration-150 transform ease-in-out
-          cursor-pointer text-nav-text bg-gray-300
+          flex flex-col gap-4 
+          transition-all duration-150 transform ease-in-out
+          cursor-pointer text-nav-text bg-white
           lg:hidden px-5 py-3
-          ${show ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"}`}
+          ${show ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}`}
         >
           <li>Home</li>
           <li>

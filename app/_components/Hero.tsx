@@ -20,10 +20,10 @@ function Hero() {
   return (
     <div className="container mx-auto flex flex-col items-center lg:mt-28 mt-16  ">
       <div className="flex flex-col  px-2">
-        <h1 className="lg:text-5xl font-sans-base font-semibold text-hero-primary px-5 text-2xl text-center">
+        <h1 className="lg:text-6xl font-sans-base font-semibold text-hero-primary px-5 text-2xl text-center">
           Run your whole eCommerce
         </h1>
-        <p className="lg:text-5xl font-semibold lg:mt-2 text-2xl px-3 text-center">
+        <p className="lg:text-6xl font-semibold lg:mt-2 text-2xl px-3 text-center">
           {" "}
           business from one dashboard.
         </p>
@@ -75,7 +75,8 @@ function Hero() {
               alt="company logo"
               width={241}
               height={41}
-              className="w-32 h-6 lg:w-36 lg:h-7 object-contain shrink-0"
+              // className="w-32 h-6 lg:w-36 lg:h-7 object-contain shrink-0"
+              className="w-auto h-6 lg:w-auto lg:h-7 object-contain shrink-0"
             />
           ))}
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
 function Footer() {
   const date = new Date().getFullYear();
-  console.log(date);
+
   return (
     <div className="container mx-auto text-white lg:pt-12 pb-5 flex flex-col gap-6 max-lg:px-4 pt-8">
       <div className="text-base flex  lg:gap-16 lg:flex-row flex-col gap-8 ">
