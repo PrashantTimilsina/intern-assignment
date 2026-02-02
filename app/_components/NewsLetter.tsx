@@ -31,7 +31,7 @@ function NewsLetter() {
           <br /> Headlime&apos;s artificial intelligence can take your thoughts.
         </p>
       </div>
-      <div className="lg:w-126 relative w-full max-lg:mt-6 px-4">
+      <div className="lg:w-126 relative w-full max-lg:mt-6 lg:px-4">
         <input
           type="email"
           placeholder="Enter email address"
@@ -40,7 +40,7 @@ function NewsLetter() {
           onChange={(e) => setEmail(e.target.value)}
         />
         <Button
-          className="bg-contact px-6 py-5 right-5 absolute lg:right-5 top-1 cursor-pointer hover:bg-green-400"
+          className="bg-contact px-6 py-5 right-1 absolute lg:right-5 top-1 cursor-pointer hover:bg-green-400"
           onClick={handleSubscribe}
         >
           Subscribe
