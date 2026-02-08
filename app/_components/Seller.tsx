@@ -1,13 +1,12 @@
-"use client";
-import React, { useState } from "react";
 import SellerImage from "./../assets/SellerImage.jpg";
 import Image from "next/image";
 import { sellerData } from "@/lib/data";
-import { ArrowUpRight, ArrowDownRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { SellerType } from "@/types/arr";
-import { Button } from "@/components/ui/button";
+
+import Link from "next/link";
+import { cn } from "@/lib/utils";
 function Seller() {
-  const [readIndex, setReadIndex] = useState<number | null>(null);
   return (
     <div className="lg:container  lg:px-0 px-2 ">
       <div className="flex gap-1  lg:gap-4 space-x-16 lg:flex-row flex-col ">
@@ -36,37 +35,26 @@ function Seller() {
           {sellerData.map((el: SellerType, i) => (
             <div
               key={i}
-              className="bg-white p-4 flex flex-col gap-4 rounded-2xl"
+              className="bg-white group p-4 flex flex-col gap-4 rounded-2xl hover:ring-secondary_brand hover:ring cursor-pointer"
             >
               <div className="flex gap-3 items-center font-semibold text-hero-primary">
                 <el.icon />
 
                 <h3>{el.title}</h3>
               </div>
-              <p
-                className={`${readIndex === i ? "" : "line-clamp-2"} text-hero-primary font-light text-base`}
-              >
+              <p className="line-clamp-2 text-hero-primary font-light text-base">
                 {el.subtitle}
               </p>
-              {readIndex === i ? (
-                <Button
-                  className="flex justify-start items-center gap-2 font-light cursor-pointer"
-                  onClick={() => setReadIndex(null)}
-                  variant="readmore"
-                >
-                  Show Less
-                  <ArrowDownRight size={18} />
-                </Button>
-              ) : (
-                <Button
-                  variant="readmore"
-                  className="flex justify-start items-center gap-2 font-light cursor-pointer"
-                  onClick={() => setReadIndex(i)}
-                >
-                  Read More
-                  <ArrowUpRight size={18} />
-                </Button>
-              )}
+
+              <Link
+                href={"#"}
+                className={cn(
+                  "flex justify-start items-center gap-2 font-light cursor-pointer text-body-text_brand text-base group-hover:text-secondary_brand",
+                )}
+              >
+                Read More
+                <ArrowUpRight size={18} />
+              </Link>
             </div>
           ))}
         </div>

@@ -2,17 +2,17 @@ import { blogs } from "@/lib/data";
 import Image from "next/image";
 function Blogs() {
   return (
-    <div className="container  lg:py-12 py-6">
+    <div className="container  ">
       <div className="flex  flex-col items-center gap-1">
         <h4>
-          <span className="bg-white text-hero-secondary rounded-full px-5 py-2 ">
+          <span className="bg-white text-body-text_brand rounded-full px-5 py-2 ">
             Insights
           </span>
         </h4>
         <h2 className="lg:text-[56px] font-semibold text-xl max-lg:mt-3">
           From Our Blog
         </h2>
-        <p className="text-center text-hero-secondary text-sm">
+        <p className="text-center text-body-text_brand text-sm">
           Practical tips, insights, and guides to help you grow your online and
           <span className="lg:block inline">retail business.</span>
         </p>

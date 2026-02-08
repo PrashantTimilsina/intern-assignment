@@ -21,7 +21,7 @@ function NewsLetter() {
     }, 2000);
   }
   return (
-    <div className="container  flex justify-between items-center lg:flex-row flex-col max-lg:px-4">
+    <div className="container  flex justify-between items-center lg:flex-row flex-col max-lg:px-4 ">
       <div className="space-y-3">
         <h3 className="lg:text-4xl font-semibold text-base">
           Join our newsletter
@@ -40,7 +40,7 @@ function NewsLetter() {
           onChange={(e) => setEmail(e.target.value)}
         />
         <Button
-          className="bg-contact px-6 py-5 right-1 absolute lg:right-5 top-1 cursor-pointer hover:bg-green-400"
+          className="bg-secondary_brand px-6 py-1 right-1 absolute lg:right-5 top-0 cursor-pointer hover:bg-secondary_hover_brand"
           onClick={handleSubscribe}
         >
           Subscribe

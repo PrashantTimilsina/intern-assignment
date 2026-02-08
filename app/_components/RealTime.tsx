@@ -43,7 +43,7 @@ export default function RealTime() {
   const [selected, setSelected] = useState(0);
 
   return (
-    <div className="container  py-12">
+    <div className="container  ">
       {/* HEADER */}
       <div className="flex justify-between text-center lg:flex-row flex-col lg:text-base text-sm gap-4 mb-10">
         <h1 className="text-white font-semibold lg:text-[56px] text-2xl">
@@ -51,7 +51,7 @@ export default function RealTime() {
           <span className="block">View of Your Business</span>
         </h1>
 
-        <h3 className="flex-1 text-carousel-card max-lg:px-2">
+        <h3 className="flex-1 text-[#C2C3DA] max-lg:px-2">
           A smart, real-time dashboard that brings all your essential business
           <span className="lg:block inline">
             data together. Track sales, customers, orders, deliveries, and
@@ -79,7 +79,7 @@ export default function RealTime() {
             </div>
 
             <h3 className="text-xl font-semibold text-white">{card.title}</h3>
-            <p className="text-sm text-carousel-card">{card.description}</p>
+            <p className="text-sm text-[#C2C3DA]">{card.description}</p>
           </div>
         ))}
       </div>
@@ -116,9 +116,7 @@ export default function RealTime() {
                   <h3 className="text-lg font-semibold text-white">
                     {card.title}
                   </h3>
-                  <p className="text-sm text-carousel-card">
-                    {card.description}
-                  </p>
+                  <p className="text-sm text-[#C2C3DA]">{card.description}</p>
                 </div>
               </CarouselItem>
             ))}

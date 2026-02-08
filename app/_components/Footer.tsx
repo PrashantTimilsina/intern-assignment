@@ -1,10 +1,16 @@
 import React from "react";
-import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+
+import {
+  FacebookIcon,
+  InstagramIcon,
+  TwitterIcon,
+  LinkedInIcon,
+} from "./icons/Icons";
 function Footer() {
   const date = new Date().getFullYear();
 
   return (
-    <div className="container  text-white lg:pt-12 pb-5 flex flex-col gap-6 max-lg:px-4 pt-8">
+    <div className="container  text-white lg:pt-25 pb-5 flex flex-col gap-6 max-lg:px-4 pt-8">
       <div className="text-base flex  lg:gap-16 lg:flex-row flex-col gap-8 ">
         {/*first div*/}
         <div className="space-y-4">
@@ -16,23 +22,19 @@ function Footer() {
             </span>
           </h4>
           <h4 className="text-lg">Follow us on</h4>
-          <div className="flex gap-4">
-            <Facebook
-              size={20}
-              className="bg-white h-8 w-8 rounded-full text-icon-primary p-1.5"
-            />
-            <Instagram
-              size={20}
-              className="bg-white h-8 w-8 rounded-full text-icon-primary p-1.5"
-            />
-            <Twitter
-              size={20}
-              className="bg-white h-8 w-8 rounded-full text-icon-primary p-1.5"
-            />
-            <Linkedin
-              size={20}
-              className="bg-white h-8 w-8 rounded-full text-icon-primary p-1.5"
-            />
+          <div className="flex gap-4 cursor-pointer">
+            <div className="w-8 h-8 bg-white rounded-full py-1.5 px-2 ">
+              <FacebookIcon className=" h-full w-full   " />
+            </div>
+            <div className="w-8 h-8 bg-white rounded-full">
+              <InstagramIcon className=" h-full w-full   p-1.5 px-2 " />
+            </div>
+            <div className="w-8 h-8 bg-white rounded-full">
+              <TwitterIcon className=" h-full w-full   py-1.5 px-2  " />
+            </div>
+            <div className="w-8 h-8 bg-white rounded-full">
+              <LinkedInIcon className=" h-full w-full   py-1.5 px-2 " />
+            </div>
           </div>
         </div>
         <div className="lg:flex lg:justify-between  flex-1 lg:px-4 grid grid-cols-2 gap-8">
@@ -76,16 +78,16 @@ function Footer() {
           </div>
         </div>
       </div>
-      <hr className="border-horizontal-line border font-light" />
-      <div className="flex justify-between lg:flex-row flex-col max-lg:text-sm max-lg:items-center lg:gap-6 gap-4">
+      <hr className="border-[#2A318D] border font-light" />
+      <div className="flex justify-between lg:flex-row flex-col max-lg:text-sm max-lg:items-center lg:gap-6 gap-4 lg:py-8">
         <h4>&copy; {date} Yhhit Solutions. All rights reserved.</h4>
 
         <div className="flex flex-wrap gap-5 max-lg:justify-center ">
-          <h2>Privacy Policy</h2>
-          <h2>Terms & Conditions</h2>
-          <h2>Cookie Policy</h2>
+          <h6>Privacy Policy</h6>
+          <h6>Terms & Conditions</h6>
+          <h6>Cookie Policy</h6>
 
-          <h2 className="max-lg:w-full text-center">Data Protection</h2>
+          <h6 className="max-lg:w-full text-center">Data Protection</h6>
         </div>
       </div>
     </div>

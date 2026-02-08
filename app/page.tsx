@@ -14,39 +14,33 @@ import Footer from "./_components/Footer";
 function App() {
   return (
     <main>
-      <header className="sticky top-0 z-50 w-full bg-white">
+      {/* <header className="sticky top-0 z-50 w-full bg-white">
         <Navbar />
-      </header>
+      </header> */}
       <section>
         <Hero />
       </section>
-      <section className="bg-seller mt-10 lg:mt-16 lg:py-12 py-8 ">
+      <section className="bg-background_brand mt-6 lg:mt-26 lg:py-12 py-8 ">
         <Seller />
       </section>
-      <section>
+      <section className="lg:py-25 py-6">
         <KeyFeatures />
       </section>
-      <section className="bg-realtime mt-8">
+      <section className=" bg-primary-darker_brand lg:py-25 py-6">
         <RealTime />
       </section>
-      <section className="bg-seller py-12">
+      <section className="bg-background_brand lg:py-25 py-6 max-lg:px-4">
         <Tools />
       </section>
-      <section>
+      <section className="lg:py-25 py-6">
         <Testimonials />
       </section>
-      <section className="bg-seller">
+      <section className="bg-background_brand lg:py-25 py-6">
         <Blogs />
       </section>
-      <section>
+      <section className="lg:py-25 py-6">
         <FAQ />
       </section>
-      <section className="bg-seller py-6">
-        <NewsLetter />
-      </section>
-      <footer className=" bg-footer">
-        <Footer />
-      </footer>
     </main>
   );
 }

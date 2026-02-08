@@ -3,6 +3,14 @@ import {
   MultiChannel,
   OnlineStoreIcon,
   POSIcon,
+  InventoryControl,
+  OrderManagement,
+  Shipping as ShippingIcon,
+  POSStore,
+  Discount,
+  Sales,
+  Product,
+  Automated,
 } from "@/app/_components/icons/Icons";
 import Mark from "./../app/assets/mark.png";
 import Sarah from "./../app/assets/sarah.png";
@@ -12,30 +20,47 @@ import Speed from "./../app/assets/speed.png";
 import Purnima from "./../app/assets/purnima.jpg";
 import Shipping from "./../app/assets/shipping.png";
 import Bimal from "./../app/assets/bimal.jpg";
+import OnlineStore from "./../app/assets/onlinestore.jpg";
+import POS from "./../app/assets/POS.jpg";
+import MultiChannelSeller from "./../app/assets/Multichannel.jpg";
+import SmallBusiness from "./../app/assets/SmallBusiness.jpg";
+
 export const sellerData = [
   {
     title: "Online Stores",
     subtitle:
       "Sell physical or digital products and need a simple way to manage products, orders, shipping, discounts, and customers from one dashboard.",
+    solution:
+      "Sell products online and manage your catalog, orders, customers, shipping, and payments from one place.",
     icon: OnlineStoreIcon,
+    image: OnlineStore,
   },
   {
     title: "Retail Shops with POS",
     subtitle:
       "Run a physical store and want your POS sales, inventory, and online orders to stay in sync — no more manual updates or stock mistakes.",
+    solution:
+      "Connect your POS with online sales to keep inventory, orders, and customers perfectly synced.",
     icon: POSIcon,
+    image: POS,
   },
   {
     title: "Multi-Channel Sellers",
     subtitle:
       "Sell across multiple platforms (website, POS, Instagram, marketplaces) and want one place to track sales, customers, payments, and delivery status.",
+    solution:
+      "Sell on your website, POS, Instagram, and marketplaces — manage everything from one dashboard.",
     icon: MultiChannel,
+    image: MultiChannelSeller,
   },
   {
     title: "Growing Small Businesses",
     subtitle:
       "Need an easy, affordable way to manage sales, stock, customers, and deliveries without switching between multiple apps or doing manual work.",
+    solution:
+      "Get a simple but powerful system to track inventory, orders, analytics, revenue, and payouts.",
     icon: GrowingSmallBusiness,
+    image: SmallBusiness,
   },
 ];
 export const testimonialData = [
@@ -129,5 +154,53 @@ export const FAQData = [
     title: "How secure is my data?",
     subtitle:
       "Your data is protected using advanced security measures, encryption protocols, regular monitoring, and industry-standard practices to ensure safety.",
+  },
+];
+export const businessData = [
+  {
+    title: "Inventory Control",
+    subtitle:
+      "Keep stock accurate across all channels with real-time updates and low-stock alerts.",
+    icon: InventoryControl,
+  },
+  {
+    title: "Order Management",
+    subtitle:
+      "Track, filter, and update orders quickly — from new to delivered.",
+    icon: OrderManagement,
+  },
+  {
+    title: "Shipping & Delivery",
+    subtitle:
+      "Integrate with couriers, print labels, and track deliveries all in one system.",
+    icon: ShippingIcon,
+  },
+  {
+    title: "POS + Online Store Sync",
+    subtitle: "Make sure offline and online sales update inventory instantly.",
+    icon: POSStore,
+  },
+  {
+    title: "Discounts & Promotions",
+    subtitle: "Run campaigns, coupon codes, and offers to increase sales.",
+    icon: Discount,
+  },
+  {
+    title: "Sales & Customer Analytics",
+    subtitle:
+      "Get clear insights into revenue, customer activity, and product performance.",
+    icon: Sales,
+  },
+  {
+    title: "Product Catalog Management",
+    subtitle:
+      "Organize all your products, variants, and categories in one structured catalog — easy to update and manage.",
+    icon: Product,
+  },
+  {
+    title: "Automated Workflows",
+    subtitle:
+      "Automate repetitive tasks like order tagging, status updates, and stock adjustments to save time every day.",
+    icon: Automated,
   },
 ];

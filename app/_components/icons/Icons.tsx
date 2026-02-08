@@ -1,6 +1,7 @@
-export function OnlineStoreIcon() {
+export function OnlineStoreIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
+      {...props}
       width="40"
       height="40"
       viewBox="0 0 40 40"
@@ -15,9 +16,10 @@ export function OnlineStoreIcon() {
     </svg>
   );
 }
-export function POSIcon() {
+export function POSIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
+      {...props}
       width="40"
       height="40"
       viewBox="0 0 40 40"
@@ -32,9 +34,10 @@ export function POSIcon() {
     </svg>
   );
 }
-export function MultiChannel() {
+export function MultiChannel(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
+      {...props}
       width="40"
       height="40"
       viewBox="0 0 40 40"
@@ -49,9 +52,10 @@ export function MultiChannel() {
     </svg>
   );
 }
-export function GrowingSmallBusiness() {
+export function GrowingSmallBusiness(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
+      {...props}
       width="40"
       height="40"
       viewBox="0 0 40 40"
@@ -66,9 +70,10 @@ export function GrowingSmallBusiness() {
     </svg>
   );
 }
-export function FirstIcon() {
+export function FirstIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
+      {...props}
       width="427"
       height="384"
       viewBox="0 0 427 384"
@@ -153,9 +158,10 @@ export function FirstIcon() {
   );
 }
 
-export function SecondIcon() {
+export function SecondIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
+      {...props}
       width="427"
       height="384"
       viewBox="0 0 427 384"
@@ -258,9 +264,10 @@ export function SecondIcon() {
   );
 }
 
-export function ThirdIcon() {
+export function ThirdIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
+      {...props}
       width="427"
       height="384"
       viewBox="0 0 427 384"
@@ -368,3 +375,318 @@ export function ThirdIcon() {
     </svg>
   );
 }
+
+export const InventoryControl = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+    width="66"
+    height="66"
+    fill="none"
+    viewBox="0 0 66 66"
+  >
+    <rect
+      width="64.625"
+      height="64.625"
+      x="0.688"
+      y="0.688"
+      stroke="#3A3F87"
+      strokeWidth="1.375"
+      rx="10.313"
+    ></rect>
+    <path
+      stroke="#3A3F87"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M20.996 26.07 33 33.014l12.004-6.944M33 46.86V33m12.375 5.5v-11A2.75 2.75 0 0 0 44 25.121l-9.625-5.5a2.75 2.75 0 0 0-2.75 0L22 25.121a2.75 2.75 0 0 0-1.375 2.379v11A2.75 2.75 0 0 0 22 40.879l9.625 5.5a2.75 2.75 0 0 0 2.75 0l9.625-5.5a2.75 2.75 0 0 0 1.375-2.379"
+    ></path>
+  </svg>
+);
+
+export const OrderManagement = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+    width="66"
+    height="66"
+    fill="none"
+    viewBox="0 0 66 66"
+  >
+    <rect
+      width="64.625"
+      height="64.625"
+      x="0.688"
+      y="0.688"
+      stroke="#3A3F87"
+      strokeWidth="1.375"
+      rx="10.313"
+    ></rect>
+    <path
+      stroke="#3A3F87"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      d="M32.106 21.775q-.135.435-.137.913c0 .569.462 1.03 1.031 1.03h6.188a1.03 1.03 0 0 0 1.03-1.03 3.2 3.2 0 0 0-.137-.913m-7.975 0a3.09 3.09 0 0 1 2.956-2.181h2.063a3.09 3.09 0 0 1 2.956 2.18m-7.975 0q-.774.05-1.545.11c-1.555.13-2.717 1.454-2.717 3.014v2.946m12.237-6.07a85 85 0 0 1 1.546.11c1.555.13 2.717 1.454 2.717 3.014v14.29a3.094 3.094 0 0 1-3.094 3.093h-3.094M27.844 27.844h-4.64c-.855 0-1.548.693-1.548 1.547v15.468c0 .854.693 1.547 1.547 1.547H36.61c.854 0 1.547-.693 1.547-1.547v-2.578M27.844 27.844h8.765c.854 0 1.547.693 1.547 1.547v12.89m-11.343-4.125 2.062 2.063L33 35.062"
+    ></path>
+  </svg>
+);
+
+export const Shipping = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+    width="66"
+    height="66"
+    fill="none"
+    viewBox="0 0 66 66"
+  >
+    <rect
+      width="64.625"
+      height="64.625"
+      x="0.688"
+      y="0.688"
+      stroke="#3A3F87"
+      strokeWidth="1.375"
+      rx="10.313"
+    ></rect>
+    <g clipPath="url(#clip0_3943_34)">
+      <path
+        stroke="#3A3F87"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M38.5 38.5V20.625H17.875V38.5zm0 0h9.625v-6.875L44 27.5h-5.5zm-11 3.438a3.437 3.437 0 1 1-6.875 0 3.437 3.437 0 0 1 6.875 0m17.875 0a3.437 3.437 0 1 1-6.875 0 3.437 3.437 0 0 1 6.875 0"
+      ></path>
+    </g>
+    <defs>
+      <clipPath id="clip0_3943_34">
+        <path fill="#fff" d="M16.5 16.5h33v33h-33z"></path>
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export const POSStore = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+    width="66"
+    height="66"
+    fill="none"
+    viewBox="0 0 66 66"
+  >
+    <rect
+      width="64.625"
+      height="64.625"
+      x="0.688"
+      y="0.688"
+      stroke="#3A3F87"
+      strokeWidth="1.375"
+      rx="10.313"
+    ></rect>
+    <path
+      fill="#3A3F87"
+      d="m21.1 38.772 17.64-17.641Zm21.019-7.07-3.025 3.025Zm-5.606 5.574-1.346 1.346Z"
+    ></path>
+    <path
+      stroke="#3A3F87"
+      strokeLinecap="round"
+      strokeWidth="1.5"
+      d="m21.1 38.772 17.64-17.641m3.379 10.571-3.025 3.025m-2.581 2.55-1.346 1.345"
+    ></path>
+    <path
+      stroke="#3A3F87"
+      strokeWidth="1.5"
+      d="M20.866 38.694a5.514 5.514 0 0 1 0-7.8l10.029-10.028a5.513 5.513 0 0 1 7.799 0l6.44 6.44a5.514 5.514 0 0 1 0 7.8L35.105 45.133a5.513 5.513 0 0 1-7.799 0z"
+    ></path>
+    <path
+      stroke="#3A3F87"
+      strokeLinecap="round"
+      strokeWidth="1.5"
+      d="M22 46.75h22"
+    ></path>
+  </svg>
+);
+
+export const Discount = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+    width="66"
+    height="66"
+    fill="none"
+    viewBox="0 0 66 66"
+  >
+    <rect
+      width="64.625"
+      height="64.625"
+      x="0.688"
+      y="0.688"
+      stroke="#3A3F87"
+      strokeWidth="1.375"
+      rx="10.313"
+    ></rect>
+    <path
+      fill="#3A3F87"
+      fillRule="evenodd"
+      d="M31.953 20.349c-.845.111-1.887.35-3.37.693l-1.689.39c-1.251.289-2.115.49-2.773.715-.637.219-.997.433-1.268.706-.272.27-.487.63-.706 1.267-.225.659-.426 1.521-.714 2.774l-.391 1.688c-.342 1.484-.582 2.526-.693 3.37-.11.823-.084 1.38.062 1.885.144.506.418.992.946 1.631.543.657 1.298 1.415 2.375 2.492l2.516 2.516c1.868 1.868 3.198 3.195 4.342 4.067 1.12.855 1.939 1.176 2.77 1.176.833 0 1.652-.32 2.773-1.176 1.142-.872 2.473-2.2 4.342-4.068 1.87-1.87 3.197-3.2 4.07-4.343.852-1.12 1.174-1.938 1.174-2.772 0-.832-.32-1.65-1.175-2.77-.872-1.144-2.2-2.475-4.07-4.344L37.96 23.73c-1.076-1.076-1.833-1.83-2.49-2.373-.64-.529-1.125-.802-1.631-.947s-1.063-.17-1.884-.061m-.27-2.045c.986-.13 1.851-.127 2.723.124.873.25 1.609.705 2.376 1.338.742.613 1.567 1.438 2.6 2.47l2.607 2.607c1.801 1.802 3.229 3.229 4.194 4.497.995 1.302 1.599 2.556 1.599 4.02 0 1.466-.604 2.72-1.598 4.022-.966 1.268-2.392 2.695-4.195 4.496l-.11.11c-1.801 1.802-3.228 3.229-4.496 4.194-1.302.996-2.558 1.6-4.022 1.6s-2.718-.604-4.022-1.598c-1.266-.967-2.693-2.393-4.496-4.196l-2.606-2.608c-1.031-1.031-1.857-1.858-2.47-2.599-.633-.768-1.088-1.504-1.338-2.376-.25-.873-.255-1.738-.124-2.724.125-.954.389-2.092.716-3.514l.413-1.792c.275-1.186.497-2.154.763-2.926.277-.807.625-1.485 1.197-2.057s1.252-.921 2.057-1.196c.772-.267 1.74-.49 2.926-.763l1.792-.413c1.422-.33 2.56-.59 3.514-.717m-2.135 9.19a1.719 1.719 0 1 0-2.43 2.43 1.719 1.719 0 0 0 2.43-2.43m-3.888-1.457a3.78 3.78 0 1 1 5.347 5.347 3.782 3.782 0 1 1-5.349-5.349m17.035 5.577a1.03 1.03 0 0 1 0 1.458l-9.596 9.597a1.031 1.031 0 0 1-1.457-1.457l9.594-9.598a1.03 1.03 0 0 1 1.46 0"
+      clipRule="evenodd"
+    ></path>
+  </svg>
+);
+
+export const Sales = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+    width="66"
+    height="66"
+    fill="none"
+    viewBox="0 0 66 66"
+  >
+    <rect
+      width="64.625"
+      height="64.625"
+      x="0.688"
+      y="0.688"
+      stroke="#3A3F87"
+      strokeWidth="1.375"
+      rx="10.313"
+    ></rect>
+    <path
+      stroke="#3A3F87"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M20.625 20.625v22a2.75 2.75 0 0 0 2.75 2.75h22"
+    ></path>
+    <path
+      stroke="#3A3F87"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M42.625 28.875 35.75 35.75l-5.5-5.5-4.125 4.125"
+    ></path>
+  </svg>
+);
+
+export const Product = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+    width="66"
+    height="66"
+    fill="none"
+    viewBox="0 0 66 66"
+  >
+    <rect
+      width="64.625"
+      height="64.625"
+      x="0.688"
+      y="0.688"
+      stroke="#3A3F87"
+      strokeWidth="1.375"
+      rx="10.313"
+    ></rect>
+    <path
+      stroke="#3A3F87"
+      strokeLinejoin="round"
+      strokeMiterlimit="10"
+      strokeWidth="2"
+      d="M28.05 20.625h-5.225a2.2 2.2 0 0 0-2.2 2.2v5.225a2.2 2.2 0 0 0 2.2 2.2h5.225a2.2 2.2 0 0 0 2.2-2.2v-5.225a2.2 2.2 0 0 0-2.2-2.2Zm15.125 0H37.95a2.2 2.2 0 0 0-2.2 2.2v5.225a2.2 2.2 0 0 0 2.2 2.2h5.225a2.2 2.2 0 0 0 2.2-2.2v-5.225a2.2 2.2 0 0 0-2.2-2.2ZM28.05 35.75h-5.225a2.2 2.2 0 0 0-2.2 2.2v5.225a2.2 2.2 0 0 0 2.2 2.2h5.225a2.2 2.2 0 0 0 2.2-2.2V37.95a2.2 2.2 0 0 0-2.2-2.2Zm15.125 0H37.95a2.2 2.2 0 0 0-2.2 2.2v5.225a2.2 2.2 0 0 0 2.2 2.2h5.225a2.2 2.2 0 0 0 2.2-2.2V37.95a2.2 2.2 0 0 0-2.2-2.2Z"
+    ></path>
+  </svg>
+);
+
+export const Automated = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+    width="66"
+    height="66"
+    fill="none"
+    viewBox="0 0 66 66"
+  >
+    <rect
+      width="64.625"
+      height="64.625"
+      x="0.688"
+      y="0.688"
+      stroke="#3A3F87"
+      strokeWidth="1.375"
+      rx="10.313"
+    ></rect>
+    <path
+      fill="#3A3F87"
+      d="M44 38.5a4.13 4.13 0 0 0-2.379.77l-3.369-1.994c.16-.493.244-1.008.248-1.526a5.5 5.5 0 0 0-4.125-5.308v-3.19a4.125 4.125 0 1 0-2.75 0v3.19A5.5 5.5 0 0 0 27.5 35.75c.004.518.088 1.033.247 1.526L24.38 39.27A4.13 4.13 0 0 0 22 38.5a4.125 4.125 0 1 0 4.125 4.125 4.1 4.1 0 0 0-.165-1.1l3.162-1.884a5.5 5.5 0 0 0 7.755 0l3.163 1.884A4.125 4.125 0 1 0 44 38.5M22 44a1.375 1.375 0 1 1 0-2.75A1.375 1.375 0 0 1 22 44m11-22a1.375 1.375 0 1 1 0 2.75A1.375 1.375 0 0 1 33 22m0 16.5a2.75 2.75 0 1 1 0-5.5 2.75 2.75 0 0 1 0 5.5M44 44a1.375 1.375 0 1 1 0-2.75A1.375 1.375 0 0 1 44 44"
+    ></path>
+  </svg>
+);
+
+export const FacebookIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+    width="10"
+    height="18"
+    fill="none"
+    viewBox="0 0 10 18"
+  >
+    <path
+      fill="#3A3F87"
+      d="M9.5 3h-3a1 1 0 0 0-1 1v3h4a.35.35 0 0 1 .34.46l-.74 2.2a.5.5 0 0 1-.47.34H5.5v7.5a.5.5 0 0 1-.5.5H2.5a.5.5 0 0 1-.5-.5V10H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 7H2V4a4 4 0 0 1 4-4h3.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5"
+    ></path>
+  </svg>
+);
+export const InstagramIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    fill="none"
+    viewBox="0 0 18 18"
+  >
+    <path
+      fill="#3A3F87"
+      fillRule="evenodd"
+      d="M13 0H5a5 5 0 0 0-5 5v8a5 5 0 0 0 5 5h8a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5m3.25 13A3.26 3.26 0 0 1 13 16.25H5A3.26 3.26 0 0 1 1.75 13V5A3.26 3.26 0 0 1 5 1.75h8A3.26 3.26 0 0 1 16.25 5zm-2.5-7.75a1 1 0 1 0 0-2 1 1 0 0 0 0 2M9 4.5A4.5 4.5 0 1 0 13.5 9 4.49 4.49 0 0 0 9 4.5M6.25 9a2.75 2.75 0 1 0 5.5 0 2.75 2.75 0 0 0-5.5 0"
+      clipRule="evenodd"
+    ></path>
+  </svg>
+);
+
+export const TwitterIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="16"
+    fill="none"
+    viewBox="0 0 18 16"
+  >
+    <path
+      fill="#3A3F87"
+      d="M17.974 2.217a7.2 7.2 0 0 1-1.663 1.6v.495a10.97 10.97 0 0 1-3.258 7.822A10.96 10.96 0 0 1 5.195 15.3a11 11 0 0 1-4.898-1.133.23.23 0 0 1-.135-.207v-.099c0-.129.105-.233.234-.233a7.96 7.96 0 0 0 4.601-1.655 3.93 3.93 0 0 1-3.496-2.301.234.234 0 0 1 .234-.324c.46.046.923.004 1.366-.126a3.92 3.92 0 0 1-3.1-3.425.234.234 0 0 1 .323-.234c.448.197.93.301 1.42.306A3.85 3.85 0 0 1 .207 1.426a.485.485 0 0 1 .818-.162 11.1 11.1 0 0 0 7.558 3.489 3.6 3.6 0 0 1-.108-.9 3.92 3.92 0 0 1 6.749-2.643 7.8 7.8 0 0 0 2.148-.746c.05-.03.112-.03.161 0 .031.05.031.113 0 .162a3.93 3.93 0 0 1-1.581 1.798 7.7 7.7 0 0 0 1.797-.431.14.14 0 0 1 .162 0 .153.153 0 0 1 .063.224"
+    ></path>
+  </svg>
+);
+
+export const LinkedInIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    fill="none"
+    viewBox="0 0 18 18"
+  >
+    <path
+      fill="#3A3F87"
+      fillRule="evenodd"
+      d="M2 0h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m3 15a.5.5 0 0 0 .5-.5v-7A.5.5 0 0 0 5 7H3.5a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5zm-.75-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m10.25 9a.5.5 0 0 0 .5-.5V9.9a3.1 3.1 0 0 0-2.72-3.14A3 3 0 0 0 9.5 8.1v-.6A.5.5 0 0 0 9 7H7.5a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5H9a.5.5 0 0 0 .5-.5v-3.75a1.5 1.5 0 0 1 3 0v3.75a.5.5 0 0 0 .5.5z"
+      clipRule="evenodd"
+    ></path>
+  </svg>
+);
