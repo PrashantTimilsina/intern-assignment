@@ -69,20 +69,14 @@ function Navbar() {
             </select>
           </li>
           <li>Contact</li>
-          <div className="space-x-4">
-            <Button
-              variant="outline"
-              className="bg-primary_brand cursor-pointer text-btn-text-primary border-none gap-2 hover:bg-hover-primary hover:text-white  "
-            >
+          <div className="flex gap-2">
+            <Button className="w-1/2">
               <LogIn size={16} />
               Login
             </Button>
 
-            <Button
-              variant="link"
-              className="cursor-pointer bg-transparent text-primary_brand gap-2 hover:text-white"
-            >
-              Register
+            <Button variant="outline" className="w-1/2">
+              Get Started
               <MoveRight size={14} />
             </Button>
           </div>

@@ -40,15 +40,15 @@ function Tools() {
     <div className="container  text-center">
       <div className="space-y-3 px-2">
         <h3 className="text-center">
-          <span className="bg-white px-6 py-2 rounded-full text-body-text_brand">
+          <span className="bg-white px-6 py-2 rounded-full text-body-text_brand text-[12px]">
             Integrations & Workflow
           </span>
         </h3>
-        <h1 className="lg:text-3xl font-semibold text-2xl ">
+        <h1 className="lg:text-3xl font-semibold text-2xl lg:mt-4">
           Works Seamlessly With the
           <span className="lg:block inline"> Tools You Already Use</span>
         </h1>
-        <p className="text-body-text_brand text-sm ">
+        <p className="text-body-text_brand text-sm lg:mt-6">
           Connect your store with leading shipping partners, payment gateways,
           POS
           <span className="lg:block inline ">
@@ -73,7 +73,7 @@ function Tools() {
             <h1 className="font-semibold text-hero-primary text-xl max-lg:hidden">
               {el.title}
             </h1>
-            <h4 className="text-body-text_brand max-lg:hidden">
+            <h4 className="text-body-text_brand max-lg:hidden text-base">
               {el.description}
             </h4>
           </div>

@@ -8,13 +8,13 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 function Seller() {
   return (
-    <div className="lg:container  lg:px-0 px-2 ">
+    <div className="lg:container   px-4 ">
       <div className="flex gap-1  lg:gap-4 space-x-16 lg:flex-row flex-col ">
-        <h1 className="font-semibold text-2xl lg:text-5xl  max-lg:text-center whitespace-nowrap max-lg:px-6">
+        <h1 className="font-semibold text-xl lg:text-5xl  max-lg:text-center whitespace-nowrap max-lg:px-6 max-sm:w-full">
           Built for Every Type
           <span className="lg:block inline"> of Seller</span>
         </h1>
-        <h2 className=" flex-1 lg:py-2 text-logo-text max-lg:text-center">
+        <h2 className=" flex-1 lg:py-2 text-body-text_brand max-lg:text-center max-lg:text-sm">
           Whether you sell online, in-store, or across multiple channels, our
           <span className="lg:block inline">
             platform adapts to the way you run your business.
@@ -37,12 +37,12 @@ function Seller() {
               key={i}
               className="bg-white group p-4 flex flex-col gap-4 rounded-2xl hover:ring-secondary_brand hover:ring cursor-pointer"
             >
-              <div className="flex gap-3 items-center font-semibold text-hero-primary">
-                <el.icon />
+              <div className="flex gap-3 items-center font-semibold text-title_brand">
+                <el.icon className="h-8 w-8 shrink-0" />
 
-                <h3>{el.title}</h3>
+                <h3 className="max-sm:text-sm">{el.title}</h3>
               </div>
-              <p className="line-clamp-2 text-hero-primary font-light text-base">
+              <p className="line-clamp-2 text-body-text_brand font-light lg:text-base text-sm">
                 {el.subtitle}
               </p>
 

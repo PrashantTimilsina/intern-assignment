@@ -10,7 +10,7 @@ function Footer() {
   const date = new Date().getFullYear();
 
   return (
-    <div className="container  text-white lg:pt-25 pb-5 flex flex-col gap-6 max-lg:px-4 pt-8">
+    <div className="container  text-white lg:pt-25 pb-5 flex flex-col gap-8 max-lg:px-4 pt-8">
       <div className="text-base flex  lg:gap-16 lg:flex-row flex-col gap-8 ">
         {/*first div*/}
         <div className="space-y-4">
@@ -78,8 +78,8 @@ function Footer() {
           </div>
         </div>
       </div>
-      <hr className="border-[#2A318D] border font-light" />
-      <div className="flex justify-between lg:flex-row flex-col max-lg:text-sm max-lg:items-center lg:gap-6 gap-4 lg:py-8">
+      <hr className="border-[#2A318D] border font-light " />
+      <div className="flex justify-between lg:flex-row flex-col max-lg:text-sm max-lg:items-center lg:gap-6 gap-4 lg:pb-3">
         <h4>&copy; {date} Yhhit Solutions. All rights reserved.</h4>
 
         <div className="flex flex-wrap gap-5 max-lg:justify-center ">

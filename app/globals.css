@@ -16,7 +16,7 @@
     max-width: 64rem /* 1024px */;
   }
   @media (width >= 1338px /* 1338px */) {
-    max-width: 1338px /* 1338px */;
+    max-width: 1328px /* 1328px */;
   }
 }
 .no-scrollbar::-webkit-scrollbar {

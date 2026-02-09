@@ -20,7 +20,7 @@ function App() {
       <section>
         <Hero />
       </section>
-      <section className="bg-background_brand mt-6 lg:mt-26 lg:py-12 py-8 ">
+      <section className="bg-background_brand  lg:py-25 py-8  ">
         <Seller />
       </section>
       <section className="lg:py-25 py-6">

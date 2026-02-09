@@ -35,7 +35,7 @@ export default function RootLayout({
           <Navbar />
         </header>
         {children}
-        <section className="bg-background_brand   lg:py-8">
+        <section className="bg-background_brand   lg:py-8 py-6">
           <NewsLetter />
         </section>
         <footer className=" bg-primary-darker_brand ">

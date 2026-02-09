@@ -44,7 +44,7 @@ function KeyFeatures() {
     <div className="container ">
       <Tabs defaultValue={features[0]?.id}>
         <div className="flex flex-col items-center gap-2 lg:gap-3 text-center ">
-          <span className=" lg:mt-12 w-fit bg-background_brand px-6 py-2 rounded-full text-body-text_brand">
+          <span className=" lg:mt-12 w-fit bg-background_brand px-6 py-2 rounded-full text-body-text_brand max-lg:text-[12px]">
             Key Features
           </span>
 
@@ -53,7 +53,7 @@ function KeyFeatures() {
             <span className="block">Your Store Smoothly</span>
           </h1>
 
-          <p className="lg:mt-1 text-logo-text lg:text-base text-sm">
+          <p className="lg:mt-1 text-body-text_brand lg:text-base text-sm">
             Powerful tools that help you manage products, orders, shipping,
             payments, and{" "}
             <span className="lg:block ">

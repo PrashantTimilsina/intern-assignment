@@ -45,13 +45,15 @@ export default function RealTime() {
   return (
     <div className="container  ">
       {/* HEADER */}
-      <div className="flex justify-between text-center lg:flex-row flex-col lg:text-base text-sm gap-4 mb-10">
-        <h1 className="text-white font-semibold lg:text-[56px] text-2xl">
+      <div className="flex justify-between text-center lg:flex-row flex-col lg:text-base text-sm gap-2 max-lg:px-4">
+        <h1 className="text-white font-semibold lg:text-[56px] text-xl">
           Get a Clear, Real-Time
-          <span className="block">View of Your Business</span>
+          <span className="lg:block inline">
+            View of Your <span className="lg:inline block">Business</span>
+          </span>
         </h1>
 
-        <h3 className="flex-1 text-[#C2C3DA] max-lg:px-2">
+        <h3 className="flex-1 text-[#C2C3DA]  max-lg:text-sm">
           A smart, real-time dashboard that brings all your essential business
           <span className="lg:block inline">
             data together. Track sales, customers, orders, deliveries, and
@@ -85,7 +87,7 @@ export default function RealTime() {
       </div>
 
       {/* MOBILE CAROUSEL */}
-      <div className="lg:hidden">
+      <div className="lg:hidden max-lg:mt-6">
         <Carousel
           className="w-full"
           setApi={(api) => {

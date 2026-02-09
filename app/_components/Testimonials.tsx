@@ -9,8 +9,6 @@ import {
   CarouselApi,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 interface Testimonial {
   title: string;
@@ -29,17 +27,17 @@ function Testimonials() {
 
   return (
     <div className="container   flex justify-between lg:gap-10 lg:flex-row flex-col max-lg:px-2.5 gap-5">
-      <div className="flex flex-col lg:gap-4 max-lg:text-center gap-2">
+      <div className="flex flex-col lg:gap-4 max-lg:text-center ">
         <h4>
-          <span className="bg-background_brand text-body-text_brand rounded-full px-4 py-2">
+          <span className="bg-background_brand text-body-text_brand rounded-full px-4 py-2 max-lg:mt-6 text-[12px]">
             Testimonial
           </span>
         </h4>
-        <h1 className="lg:text-[56px] font-semibold text-hero-primary text-xl max-lg:mt-4">
+        <h1 className="lg:text-[56px] font-semibold text-hero-primary max-lg:mt-4 text-xl">
           Loved by <span className="lg:block inline">Businesses of All</span>{" "}
           Sizes
         </h1>
-        <p className="text-body-text_brand max-lg:text-base">
+        <p className="text-body-text_brand max-lg:text-sm max-lg:mt-2 max-lg:px-2 text-xl">
           See how stores, brands, and retail teams use our
           <span className="lg:block inline">
             platform to simplify operations, boost sales, and scale{" "}
@@ -67,10 +65,12 @@ function Testimonials() {
             key={i}
             className=" p-6 rounded-lg flex flex-col justify-between bg-[#F6F6F6]"
           >
-            <h4 className="text-lg font-semibold text-hero-primary whitespace-pre-line">
+            <h4 className="lg:text-lg font-semibold text-hero-primary whitespace-pre-line text-base">
               {el.title}
             </h4>
-            <p className="text-body-text_brand">{el.subtitle}</p>
+            <p className="text-body-text_brand max-lg:mt-4 text-base ">
+              {el.subtitle}
+            </p>
             <div className="flex">
               <div className="h-24 w-24 ">
                 <Image
@@ -100,7 +100,7 @@ function Testimonials() {
                   <h4 className="text-lg font-semibold text-hero-primary">
                     {el.title}
                   </h4>
-                  <p className="text-body-text_brand">{el.subtitle}</p>
+                  <p className="text-body-text_brand text-sm">{el.subtitle}</p>
                   <div className="flex mt-5">
                     <div className="h-24 w-24 ">
                       <Image
@@ -112,19 +112,16 @@ function Testimonials() {
                       />
                     </div>
                     <div className="text-body-text_brand flex flex-col justify-start  ">
-                      <h3 className="text-body-text_brand font-semibold">
+                      <h3 className="text-body-text_brand font-semibold text-lg">
                         {el.name}
                       </h3>
-                      <h6>{el.role}</h6>
+                      <h6 className="text-sm">{el.role}</h6>
                     </div>
                   </div>
                 </div>
               </CarouselItem>
             ))}
           </CarouselContent>
-
-          <CarouselPrevious />
-          <CarouselNext />
         </Carousel>
       </div>
 

@@ -1,25 +1,12 @@
 import { Button } from "@/components/ui/button";
-// import Aicene from "./../assets/aicene.png";
-// import DressNepal from "./../assets/dressnepal.png";
-// import GifyPoint from "./../assets/giftypoint.png";
-// import NaturalWears from "./../assets/naturalwears.jpg";
-// import OrganicWear from "./../assets/organicwear.png";
-// import YHH from "./../assets/YHH.png";
+
 import { ArrowRight, Video } from "lucide-react";
 import Image from "next/image";
 import HeroPic from "./../assets/hero.png";
 import ImgScroll from "./ImgScroll";
 function Hero() {
-  // const images = [
-  //   DressNepal,
-  //   YHH,
-  //   OrganicWear,
-  //   GifyPoint,
-  //   NaturalWears,
-  //   Aicene,
-  // ];
   return (
-    <div className="container  flex flex-col items-center lg:mt-26 mt-6  ">
+    <div className="container  flex flex-col items-center lg:py-25 py-6  ">
       <div className="flex flex-col  px-2">
         <h1 className="lg:text-6xl font-sans-base font-semibold text-hero-primary px-5 text-2xl text-center">
           Run your whole eCommerce
