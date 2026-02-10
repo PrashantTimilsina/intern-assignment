@@ -6,9 +6,14 @@ import HeroPic from "./../assets/hero.png";
 import ImgScroll from "./ImgScroll";
 function Hero() {
   return (
-    <div className="container  flex flex-col items-center lg:py-25 py-6  ">
+    <div className=" container  flex flex-col items-center lg:py-25 py-6 overflow-hidden  ">
+      {/*color adding div*/}
+
+      <div className="absolute w-[527px] h-[617px] bg-[#CF3E81]/20 blur-[200px] -top-10 left-4 rounded-full"></div>
+      <div className="absolute w-[527px] h-[617px] bg-black/20 blur-[200px] top-40 right-4 rounded-full"></div>
+      {/*color ending div*/}
       <div className="flex flex-col  px-2">
-        <h1 className="lg:text-6xl font-sans-base font-semibold text-hero-primary px-5 text-2xl text-center">
+        <h1 className="lg:text-6xl font-sans-base font-semibold text-title_brand px-5 text-2xl text-center">
           Run your whole eCommerce
         </h1>
         <p className="lg:text-6xl font-semibold lg:mt-2 text-2xl px-3 text-center">
@@ -30,7 +35,7 @@ function Hero() {
           <ArrowRight />
         </Button>
         <Button
-          className="text-btn-text-secondary font-normal py-5 cursor-pointer max-lg:w-full max-lg:py-6"
+          className="text-primary_brand font-normal py-5 cursor-pointer max-lg:w-full max-lg:py-6"
           variant="outline"
         >
           <Video />

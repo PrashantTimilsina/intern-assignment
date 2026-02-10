@@ -7,7 +7,7 @@ function Navbar() {
   const [show, setShow] = useState(false);
 
   return (
-    <div className="lg:container  lg:mt-1 bg-white ">
+    <div className="lg:container  lg:mt-1  ">
       <nav className="flex items-center justify-between  py-4 z-50">
         <div className="flex items-center gap-2 px-4">
           <Codepen />
@@ -42,7 +42,7 @@ function Navbar() {
             Login
           </Button>
 
-          <Button variant="outline">
+          <Button variant="outline" className="text-primary_brand">
             Register
             <MoveRight size={14} />
           </Button>
@@ -75,7 +75,7 @@ function Navbar() {
               Login
             </Button>
 
-            <Button variant="outline" className="w-1/2">
+            <Button variant="outline" className="w-1/2 text-primary_brand">
               Get Started
               <MoveRight size={14} />
             </Button>

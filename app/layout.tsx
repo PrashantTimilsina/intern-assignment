@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={` ${googleSansFlex.className}  ${googleSans.variable}   antialiased overflow-x-hidden  `}
       >
-        <header className="sticky top-0 z-50 w-full bg-white">
+        <header className="sticky top-0 z-50 w-full bg-transparent">
           <Navbar />
         </header>
         {children}
