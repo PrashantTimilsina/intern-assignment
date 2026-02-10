@@ -22,7 +22,6 @@ function Solution() {
             </div>
             {/*second div*/}
             <div className="flex  max-lg:w-full max-w-[713px]">
-              {/* <div className="relative "> */}
               <Image
                 src={SolutionImage}
                 alt="Solution"
@@ -30,15 +29,11 @@ function Solution() {
                 width={713}
                 className="lg:h-114.75 w-full object-contain pl-10"
               />
-              {/* </div> */}
             </div>
           </div>
         </div>
       </div>
       <div className="bg-background_brand py-6 max-lg:px-4">
-        {/* <h1 className="font-semibold text-hero-primary text-center ">
-          Trusted by Businesses Worldwide
-        </h1> */}
         <ImgScroll />
       </div>
 
