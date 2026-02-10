@@ -107,6 +107,7 @@ export const blogs = [
     ownerName: "Anwar Pandaan",
     date: "March 16,2022",
     readDuration: "6 min read",
+    category: "Inventory Management",
   },
   {
     title: "7 Ways to Improve Your Order Processing \nSpeed",
@@ -117,6 +118,7 @@ export const blogs = [
     ownerName: "Purnima Sai",
     date: "March 16,2022",
     readDuration: "5 min read",
+    category: "Order & Shipping",
   },
   {
     title: "The Complete Guide to Setting Up Shipping for Your Store",
@@ -127,6 +129,7 @@ export const blogs = [
     ownerName: "Bimal Khatri",
     date: "March 16,2022",
     readDuration: "7 min read",
+    category: "Sales & Marketing",
   },
 ];
 export const FAQData = [
