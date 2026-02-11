@@ -130,6 +130,19 @@ export const blogs = [
     date: "March 16,2022",
     readDuration: "7 min read",
     category: "Sales & Marketing",
+    section: "yaha bata add suru",
+  },
+  {
+    title: "The Complete Guide to Setting Up Shipping for Your Store",
+    subtitle:
+      "Understand how shipping integrations work, how to choose the right couriers, and how to automate label printing and delivery tracking.",
+    image: Shipping,
+    ownerImage: Bimal,
+    ownerName: "Bimal Khatri",
+    date: "March 16,2022",
+    readDuration: "7 min read",
+    category: "Sales & Marketing",
+    section: "yaha bata add suru",
   },
 ];
 export const FAQData = [

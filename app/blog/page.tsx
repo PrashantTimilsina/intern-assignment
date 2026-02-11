@@ -52,7 +52,7 @@ function Blog() {
         <div>
           <h3 className="lg:text-[32px] font-semibold text-xl">Top Reads</h3>
 
-          <div className="space-y-4 lg:mt-6  mt-4">
+          <div className="space-y-4 lg:mt-6  mt-4 overflow-y-scroll max-h-[514px] no-scrollbar">
             {blogs.map((blog, index) => (
               <div key={index} className="flex rounded-md w-full">
                 <div className="lg:h-38 lg:w-57 relative bg-background_brand rounded-tl-3xl shrink-0 w-34.25 h-auto">
@@ -79,9 +79,8 @@ function Blog() {
           </div>
         </div>
       </div>
-      {/* <div> */}
+
       <Categories />
-      {/* </div> */}
     </div>
   );
 }

@@ -39,7 +39,7 @@ function Categories() {
           <h2 className="text-xl lg:text-[32px] font-semibold">
             Browse by categories
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-3 space-x-6 mt-8 max-lg:space-y-4">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8 max-lg:space-y-4 ">
             {filteredBlogs.map((el, i) => (
               <BlogCard key={i} blog={el} location="blogpage" />
             ))}
