@@ -10,7 +10,7 @@ function Hero() {
       {/*color adding div*/}
 
       <div className="absolute h-73.25 w-61 lg:w-131.75 lg:h-154.25 bg-[#CF3E81]/20 lg:blur-[200px] lg:-top-10 top-1 left-4 rounded-full blur-[100px]"></div>
-      <div className="absolute h-73.25 w-61 lg:w-131.75 lg:h-154.25 bg-black/20 lg:blur-[200px] lg:top-40 top-24 right-4 rounded-full blur-[100px]"></div>
+      <div className="absolute h-73.25 w-61 lg:w-131.75 lg:h-154.25 bg-black/20 lg:blur-[200px] lg:top-40 top-24 right-4 rounded-full blur-[120px]"></div>
       {/*color ending div*/}
       <div className="flex flex-col  px-2">
         <h1 className="lg:text-6xl font-sans-base font-semibold text-title_brand px-5 text-2xl text-center">

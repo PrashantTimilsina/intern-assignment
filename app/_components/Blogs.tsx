@@ -1,5 +1,5 @@
 import { blogs } from "@/lib/data";
-import Image from "next/image";
+
 import BlogCard from "./BlogCard";
 function Blogs() {
   return (

@@ -63,29 +63,31 @@ function KeyFeatures() {
         </div>
 
         {/* Desktop Tabs */}
-        <div className="no-scrollbar hidden lg:flex justify-center gap-8 mt-10">
+        {/* <div className="no-scrollbar hidden lg:flex justify-center gap-8 mt-10"> */}
+        <TabsList
+          variant="line"
+          className="no-scrollbar hidden lg:flex  gap-12 mt-10 mx-auto justify-center   w-fit"
+        >
           {features.map((item, i) => (
-            <TabsList key={i} variant="line">
-              <TabsTrigger
-                value={item.id}
-                className="cursor-pointer data-[state=active]:text-primary_brand after:bg-primary_brand"
-              >
-                {item.title}
-              </TabsTrigger>
-            </TabsList>
+            <TabsTrigger
+              key={i}
+              value={item.id}
+              className="   text-ellipsis  cursor-pointer data-[state=active]:text-primary_brand after:bg-primary_brand inline-flex"
+            >
+              {item.title}
+            </TabsTrigger>
           ))}
-        </div>
+        </TabsList>
+        {/* </div> */}
 
         {/* Mobile Tabs */}
-        <div className="no-scrollbar flex lg:hidden mt-6 overflow-x-auto gap-3 px-4">
+        {/* <div className="no-scrollbar flex lg:hidden mt-6 overflow-x-auto gap-3 px-4"> */}
+        <TabsList className="border-none bg-transparent p-0 shadow-none no-scrollbar flex lg:hidden mt-6 overflow-x-auto gap-3 px-4 w-full justify-start">
           {features.map((item, i) => (
-            <TabsList
+            <TabsTrigger
               key={i}
-              className="border-none bg-transparent p-0 shadow-none"
-            >
-              <TabsTrigger
-                value={item.id}
-                className="cursor-pointer 
+              value={item.id}
+              className="cursor-pointer 
                   data-[state=active]:text-primary_brand
                   border-none
                   outline-none
@@ -106,12 +108,12 @@ function KeyFeatures() {
                   data-[state=active]:after:bg-primary_brand
                   data-[state=active]:after:content-['']
                 "
-              >
-                {item.title}
-              </TabsTrigger>
-            </TabsList>
+            >
+              {item.title}
+            </TabsTrigger>
           ))}
-        </div>
+        </TabsList>
+        {/* </div> */}
 
         {features.map((item, i) => (
           <TabsContent key={i} value={item.id}>

@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { blogs } from "@/lib/data";
 import BlogCard from "@/app/_components/BlogCard";
 function Categories() {
@@ -23,18 +23,18 @@ function Categories() {
   return (
     <div className="lg:py-15 py-6 ">
       <Tabs onValueChange={setActiveTab} value={activeTab}>
-        <div className="flex gap-2 bg-transparent overflow-x-auto no-scrollbar">
+        <TabsList className="flex gap-2 bg-transparent max-lg:overflow-x-auto overflow-y-visible no-scrollbar max-lg:w-full max-lg:justify-start   h-10! ">
           {tabsTitle.map((item, i) => (
-            <TabsList key={i} className="bg-transparent">
-              <TabsTrigger
-                value={item}
-                className="cursor-pointer data-[state=active]:bg-primary_brand data-[state=active]:text-white py-2 px-4 rounded-full text-base text-body-text_brand border border-[#D7D7D7] bg-background_brand"
-              >
-                {item}
-              </TabsTrigger>
-            </TabsList>
+            <TabsTrigger
+              key={i}
+              value={item}
+              className="cursor-pointer data-[state=active]:bg-primary_brand data-[state=active]:text-white py-2 px-4 rounded-[30px] text-base text-body-text_brand border border-[#D7D7D7] bg-background_brand  h-10 "
+            >
+              {item}
+            </TabsTrigger>
           ))}
-        </div>
+        </TabsList>
+
         <div className="mt-6 ">
           <h2 className="text-xl lg:text-[32px] font-semibold">
             Browse by categories
@@ -45,13 +45,6 @@ function Categories() {
             ))}
           </div>
         </div>
-
-        {/* Add content for each tab */}
-        {/* {tabsTitle.map((item, i) => (
-          <TabsContent key={i} value={item}>
-            <div className="p-4">Content for {item}</div>
-          </TabsContent>
-        ))} */}
       </Tabs>
     </div>
   );
